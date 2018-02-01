@@ -1,0 +1,28 @@
+<header-layout></header-layout>
+
+<body>
+    <h4>{{headingName}}:</h4><span class="down"><dropdown></dropdown></span>
+    <div class="new">
+        <div id="showgrid" *ngIf="lenght<1 ; else lessImage">
+            <div *ngFor="let row of rowsize" let i="index" class="row">
+                <div *ngFor="let column of columns" let j="index" class="column"></div>
+            </div>
+        </div>
+        <ng-template #lessImage>
+            <div class="new">
+                <div class="row">
+                    <div *ngFor="let images of imageGallery" class="column">
+                        <a href="javascript:void(0)">
+                        <div class="card" (click)="onCategorySelected(images.name)">
+                            <img class="card-img-top" src="assets/{{type}}/{{images.image}}" alt="Image not found">
+                            <div class="card-body">
+                                <h6 class="card-title">{{images.name}}</h6>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</body>

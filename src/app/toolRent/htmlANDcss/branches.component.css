@@ -1,0 +1,51 @@
+body {
+    height:auto;
+  }
+ h4
+{
+    font-family: 'Arbutus', cursive;
+    font-size:35px;
+    color:#F8CA4D;
+    margin-top:30px;
+    margin-left: 80px;
+    text-shadow:0px 0px 4px #222;
+}
+.down{
+    text-align: center;
+    margin-top: 0px;
+  }
+@media screen and (min-device-width:698px) {
+    div#showgrid {
+      width: 698px;
+      margin: auto;
+    }
+  }
+  .card{
+    width:200px;
+    height:280px;
+  }
+.new{
+    margin-left: 0%;
+}
+  .row {
+    width: 100%;
+    margin: auto;
+    padding: 20px
+  }
+  
+  @media (min-device-width: 698px) {
+    .column {
+      width: 230px;
+      height: 230px;
+      display: inline;
+      float: left;
+    }
+  }
+  
+  .column {
+    background-attachment: fixed;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+    margin: 115px;
+  }
